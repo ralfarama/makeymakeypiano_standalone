@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://makeymakey.com/piano/ -->
+<html data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<!--
+		SITE BY YOTAM MANN
+		yotammann.info
+	 -->
+	<title>PIANO</title>
+	<!--dependencies-->
+	<script async="" src="./PIANO_files/analytics.js"></script><script src="./PIANO_files/WebAudioNote.js"></script><script src="./PIANO_files/jquery-1.10.2.min.js"></script>
+	<script src="./PIANO_files/modernizr.custom.js"></script>
+	<script src="./PIANO_files/soundmanager2.min.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="./PIANO_files/piano.css">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-1786839-7', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+<body>
+	<noscript>
+		Please enable javascript for this page to work
+	</noscript>
+	<div id="titlebar">
+		<a id="icon" href="http://makeymakey.com/"><img src="./PIANO_files/makey-makey-logo5.gif"></a>
+	</div>
+	<div id="container">
+		<div id="C"><img src="./PIANO_files/piano_left.png" style="opacity: 0;"></div>
+		<div id="D"><img src="./PIANO_files/piano_up.png" style="opacity: 0;"></div>
+		<div id="E"><img src="./PIANO_files/piano_right.png" style="opacity: 0;"></div>
+		<div id="F"><img src="./PIANO_files/piano_down.png" style="opacity: 0;"></div>
+		<div id="G"><img src="./PIANO_files/piano_space.png" style="opacity: 0;"></div>
+		<div id="A">
+			<div id="A_hover"></div>
+		<img src="./PIANO_files/piano_click.png" style="opacity: 0;"></div>
+	</div>
+	<div id="loading" style="cursor: pointer;">
+		<div id="loadingText">Click here to play</div>
+	</div>
+	<!--application-->
+	<script type="text/javascript">
+		/*
+			maps note names to image and audio names
+		*/
+		var KEYMAP = {
+			"C" : {
+				audio : "piano/c4",
+				image : "piano_left",
+				keyCode : 37
+			},
+			"D" : {
+				audio : "piano/d4",
+				image : "piano_up",
+				keyCode : 38
+			},
+			"E" : {
+				audio : "piano/e4",
+				image : "piano_right",
+				keyCode : 39
+			},
+			"F" : {
+				audio : "piano/f4",
+				image : "piano_down",
+				keyCode : 40
+			},
+			"G" : {
+				audio : "piano/g4",
+				image : "piano_space",
+				keyCode : 32
+			},
+			"A" : {
+				audio : "piano/a4",
+				image : "piano_click",
+				keyCode : null
+			}
+		};
+	</script>
+	<script src="./PIANO_files/Inst.js"></script>
+
+
+</body></html>
